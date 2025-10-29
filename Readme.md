@@ -1,8 +1,11 @@
-# 🚀 MERN Stack Task Manager with Authentication
+MERN Stack Task Manager with Authentication
 
-A full-stack web application built with MongoDB, Express.js, React.js, and Node.js (MERN) featuring JWT authentication, user management, and CRUD operations for tasks.
+A full stack web application built with MongoDB, Express.js, React.js, and Node.js (MERN) featuring JWT authentication, user management, and CRUD operations for tasks.
 
-## 📋 Table of Contents
+Github Repo: https://github.com/karimulla9673-oss/Taskmanager-Webapp
+Live : https://taskmanager-webapp-1.onrender.com
+
+Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -62,7 +65,7 @@ A full-stack web application built with MongoDB, Express.js, React.js, and Node.
 ## 📁 Project Structure
 
 ```
-mern-auth-app/
+MERN Authentication/
 ├── backend/
 │   ├── config/
 │   │   └── db.js                 # MongoDB connection
@@ -106,10 +109,10 @@ mern-auth-app/
 
 Before you begin, ensure you have the following installed:
 
-- **Node.js** (v14 or higher) - [Download](https://nodejs.org/)
-- **npm** (comes with Node.js) or **yarn**
-- **MongoDB** - [Download](https://www.mongodb.com/try/download/community) or use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- **Git** - [Download](https://git-scm.com/)
+- **Node.js** [Download](https://nodejs.org/)
+- **npm** (comes with Node.js) 
+- **MongoDB** use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- **Git** [Download](https://git-scm.com/)
 
 ## 🚀 Installation
 
@@ -118,8 +121,8 @@ Before you begin, ensure you have the following installed:
 Create the following folder structure:
 
 ```bash
-mkdir mern-auth-app
-cd mern-auth-app
+mkdir MERN Authentication
+cd MERN Authentication
 mkdir backend frontend
 ```
 
@@ -146,11 +149,17 @@ Create all backend files as provided above (server.js, models, routes, etc.)
 Create a `.env` file in the `backend` folder:
 
 ```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/mern-auth-app
-JWT_SECRET=your_super_secret_jwt_key_change_this_in_production_abc123xyz789
-NODE_ENV=development
-FRONTEND_URL=http://localhost:5173
+
+
+PORT=5001
+
+MONGODB_URI= "mongodb+srv://karimulla:karim@cluster0.cmxd7fz.mongodb.net/WebappappName=Cluster0"
+
+JWT_SECRET= "e404204db1e0a8e23f8d735e5475bb0f32a341705d35c4ae6fed39e696fd8ff62e864ba15e2c590da69ef5606ad53c90f3c25494e6ab32768d3c598d1ebd2dc0"
+
+  
+
+FRONTEND_URL= "https://taskmanager-webapp-1.onrender.com"
 ```
 
 **Important:** 
@@ -228,9 +237,9 @@ npm run dev
 
 You should see:
 ```
-🚀 Server running on port 5000
-✅ MongoDB Connected: localhost
-📊 Database Name: mern-auth-app
+Server running on port 5000
+MongoDB Connected: localhost
+Database Name: mern-auth-app
 ```
 
 ### Start Frontend Development Server
@@ -415,20 +424,20 @@ Authorization: Bearer <your-jwt-token>
 
 ## 🚢 Deployment
 
-### Backend Deployment (e.g., Render, Railway, Heroku)
+### Backend Deployment (e.g., Render)
 
 1. Push code to GitHub
 2. Create new web service
 3. Set environment variables
 4. Deploy from GitHub repo
 
-### Frontend Deployment (e.g., Vercel, Netlify)
+### Frontend Deployment (e.g., Render)
 
 1. Push code to GitHub
 2. Import project
 3. Set build command: `npm run build`
 4. Set output directory: `dist`
-5. Add environment variable: `VITE_API_URL=<your-backend-url>`
+
 
 ## 🧪 Testing the Application
 
@@ -513,4 +522,4 @@ Created as a learning project for MERN stack development.
 
 ---
 
-**Happy Coding! 🎉**
+ Coding
