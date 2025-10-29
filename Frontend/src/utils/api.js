@@ -4,7 +4,7 @@ import axios from 'axios';
 /**
  * Base API URL - change this for production
  */
-const API_URL = import.meta.env.VITE_API_URL || 'https://taskmanager-webapp.onrender.com';
+const API_URL = import.meta.env.VITE_API_URL || 'https://taskmanager-webapp.onrender.com/api';
 
 /**
  * Create axios instance with default config
@@ -56,7 +56,7 @@ api.interceptors.response.use(
  * @returns {Promise} API response
  */
 export const signup = async (userData) => {
-  const response = await api.post('https://taskmanager-webapp.onrender.com/auth/signup', userData);
+  const response = await api.post('/auth/signup', userData);
   return response.data;
 };
 
@@ -66,7 +66,7 @@ export const signup = async (userData) => {
  * @returns {Promise} API response
  */
 export const login = async (credentials) => {
-  const response = await api.post('https://taskmanager-webapp.onrender.com/auth/login', credentials);
+  const response = await api.post('/auth/login', credentials);
   return response.data;
 };
 
@@ -75,7 +75,7 @@ export const login = async (credentials) => {
  * @returns {Promise} API response
  */
 export const getProfile = async () => {
-  const response = await api.get('https://taskmanager-webapp.onrender.com/auth/profile');
+  const response = await api.get('/auth/profile');
   return response.data;
 };
 
@@ -87,7 +87,7 @@ export const getProfile = async () => {
  * @returns {Promise} API response
  */
 export const getTasks = async (params = {}) => {
-  const response = await api.get('https://taskmanager-webapp.onrender.com/tasks', { params });
+  const response = await api.get('/tasks', { params });
   return response.data;
 };
 
@@ -97,7 +97,7 @@ export const getTasks = async (params = {}) => {
  * @returns {Promise} API response
  */
 export const getTask = async (id) => {
-  const response = await api.get(`https://taskmanager-webapp.onrender.com/tasks/${id}`);
+  const response = await api.get(`/tasks/${id}`);
   return response.data;
 };
 
@@ -107,7 +107,7 @@ export const getTask = async (id) => {
  * @returns {Promise} API response
  */
 export const createTask = async (taskData) => {
-  const response = await api.post('https://taskmanager-webapp.onrender.com/tasks', taskData);
+  const response = await api.post('/tasks', taskData);
   return response.data;
 };
 
@@ -118,7 +118,7 @@ export const createTask = async (taskData) => {
  * @returns {Promise} API response
  */
 export const updateTask = async (id, taskData) => {
-  const response = await api.put(`https://taskmanager-webapp.onrender.com/tasks/${id}`, taskData);
+  const response = await api.put(`/tasks/${id}`, taskData);
   return response.data;
 };
 
@@ -128,7 +128,7 @@ export const updateTask = async (id, taskData) => {
  * @returns {Promise} API response
  */
 export const deleteTask = async (id) => {
-  const response = await api.delete(`https://taskmanager-webapp.onrender.com/tasks/${id}`);
+  const response = await api.delete(`/tasks/${id}`);
   return response.data;
 };
 
@@ -138,7 +138,7 @@ export const deleteTask = async (id) => {
  * @returns {Promise} API response
  */
 export const searchTasks = async (query) => {
-  const response = await api.get(`https://taskmanager-webapp.onrender.com/tasks/search?q=${query}`);
+  const response = await api.get(`/tasks/search?q=${query}`);
   return response.data;
 };
 
