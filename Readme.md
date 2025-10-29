@@ -236,7 +236,7 @@ npm run dev
 ```
 
 You should see:
-```
+``
 Server running on port 5000
 MongoDB Connected: localhost
 Database Name: mern-auth-app
